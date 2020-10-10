@@ -1,55 +1,61 @@
-# Vim 实操教程（Learning Vim）
+# Learning Vim
 
-以我个人学习 Vim 的经验来看，通过看文档或看其他人操作其实是很难真正学会 Vim 的，你必须在实际
-应用中，进入真实场景才能逐渐熟悉并掌握相关命令。
+From my personal experience of learning Vim, it is actually difficult to 
+really learn Vim by reading the documentation or watching other people’s 
+operations. You must In the application, only by entering the real scene can 
+you gradually become familiar with and master the relevant commands.
 
-因此，为了同时满足学习和操作的需求，项目中的文件都采用了 Markdown 格式，既可以当作说明文档来
-阅读，也可以用 Vim 打开文件进行实际操作（建议采用后者）。
+Therefore, in order to meet the needs of learning and operation at the same 
+time, the files in the project are all in Markdown format, which can be used 
+as documentation for reading, you can also use Vim to open the file for actual 
+operation (the latter is recommended).
 
-## 如何使用
+## How To Use
 
-1. 进入控制台
-2. clone 项目到本地
+1. Open your Terminal
+2. Clone this project to local
   > `git clone git@github.com:dofy/learn-vim.git`
-3. 进入项目文件夹
+3. Change directory to `learn-vim`
   > `cd learn-vim`
-4. 用 Vim 打开文件 `file-one.md`
+4. Open `file-one.md` by Vim
   > `vim file-one.md`
 
-## 排版规范
+## Typographic Instructions
 
 ```Markdown
-## 大标题表示一大类
+## High level heading
 
-### 小标题表示该大类下的小分类
+### Next level heading
 
-没有任何格式的文本为正常描述，只有阅读功能。
+The text without any format is the description content and is only for reading.
 
-> 嵌入到引用块中的文本为操作指示，你可以按照里面提到的内容进行操作
+> The text embedded in the quote block is the operation instruction, you can 
+> follow the content mentioned in it to operate
 >
-> 同时操作符或命令会包含在类似 `:w` 的符号中
+> And, Operators or Commands will be contained in symbols like `:w`
 
-命令中形如 f<X> 中的 < 和 > 不需要打出来，<X> 代表一个变量，即你可以打 fa 或 fb 亦或 fC
+The `<` and `>` in the form of `f<X>` in the command do not need to be typed 
+out. `<X>` represents a variable, that is, you can type `fa`, `fb` or `fC`
 
-_注意：命令区分大小写（需要注意的事项会出现在当前行这样的符号中）_
+_Note: Commands are case sensitive (the items that need attention will appear in symbols like the current line)_
 ```
 
-## 导航
+## Navigation
 
-### 基础操作
+### Basic Operation
 
-1. [光标的移动](file-one.md)
-1. [打开文件、查找内容](file-two.md)
-1. [文档的修改与保存](file-three.md)
-1. [一些小技巧](file-four.md)
-1. [分屏与标签页](file-five.md)
-1. [块操作](file-six.md)
-1. [Vim 中的宏](file-seven.md)
+1. [Move The Cursor](file-one.md)
+1. [Open File, Find Content](file-two.md)
+1. [Modify and Save Documents](file-three.md)
+1. [Some Tips](file-four.md)
+1. [Split Screen and Tabs](file-five.md)
+1. [Block Operation](file-six.md)
+1. [Macros in Vim](file-seven.md)
 
-### 附加内容
+### Appendix
 
-1. [Vim 插件](plugin.md)
-1. [插件推荐](plugins/index.md)
+1. [Vim Plugins](plugin.md)
+1. [Recommended Plugins](plugins/index.md)
     1. [NERDTree](plugins/nerdtree.md)
     1. [EasyAlign](plugins/easyalign.md)
     1. [Airline & Themes](plugins/airline.md)
@@ -57,9 +63,14 @@ _注意：命令区分大小写（需要注意的事项会出现在当前行这�
 
 ## Tips
 
-- 教程中会有下一章或相关章节的导航，定位到文件名执行 `gf`（goto file）就可以打开相关文件
-- 你可以随时打开相关章节查看，然后用 `:bp` 回到之前的文件（该命令会在[第二章](file-two.md)中讲到）
-- 当你用 `:q` 或 `:qa` 退出教程时可能会收到文件未保存的错误提醒，试试在命令后面加上 `!`
+- There will be navigation to the next chapter or related chapters in the 
+tutorial, locate the file name and execute `gf` (goto file) to open the 
+related file
+- You can open the relevant chapters to view at any time, and then use `:bp` 
+to return to the previous file (this command will be discussed in 
+[Chapter 2](file-two.md))
+- When you exit the tutorial with `:q` or `:qa`, you may receive a warning 
+that the file is not saved, try adding `!` after the command
 
 ## TODO
 
@@ -69,21 +80,22 @@ _注意：命令区分大小写（需要注意的事项会出现在当前行这�
 - [ ] text object
 - [x] [plugins](plugin.md)
 
-## 推荐几个 Vim 配置方案
+## Recommended Vim Configuration Scheme
 
   - [dofy / **7th-vim**][7th-vim]
   - [kepbod / **ivim**][kepbod]
   - [chxuan / **vimplus**][chxuan]
   - [SpaceVim / **SpaceVim**][spacevim]
 
-## 推荐另外几个出色的 Vim 教程
+## Other Vim Tutorials
 
-- 控制台运行 `vimtutor` 这是 Vim 官方实操教程
-- [简明 Vim 练级攻略][coolshell] 很不错的入门教程
-- [Vim Galore][vimgalore] 更新频繁，Vim 进阶必读
-- [每日一Vim][liuzhijun] 共 30 篇，内容比较全
-- [Vim 教程网][vimjc] 一个女生维护的 Vim 中文教程网站，持续更新中
-- [A book for learning the Vim editor][learnvim] 另一个 Learn Vim （英语）
+- Run `vimtutor` on the console. This is the official Vim tutorial.
+- [Concise Vim Leveling Guide][coolshell] Very good introductory tutorial.
+- [Vim Galore][vimgalore] Frequent updates, must read for advanced Vim.
+- [Vim everyday][liuzhijun] A total of 30 articles, relatively complete.
+- [Vim Tutorial][vimjc] A Vim Chinese tutorial website maintained by a girl, 
+continuously updated.
+- [A book for learning the Vim editor][learnvim] Another Learn Vim (English).
 
 ## Cheatsheets
 
@@ -103,7 +115,7 @@ _注意：命令区分大小写（需要注意的事项会出现在当前行这�
 [spacevim]: https://github.com/SpaceVim/SpaceVim
 [coolshell]: http://coolshell.cn/articles/5426.html
 [vimgalore]: https://github.com/mhinz/vim-galore
-[liuzhijun]: http://liuzhijun.iteye.com/category/270228
+[liuzhijun]: https://liuzhijun.iteye.com/category/270228
 [vimjc]: https://vimjc.com
 [learnvim]: https://github.com/iggredible/Learn-Vim
 [cheatsheets1]: https://vim.rtorr.com/lang/zh_tw
