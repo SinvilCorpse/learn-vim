@@ -9,7 +9,7 @@
 ## 如何使用
 
 1. 进入控制台
-2. clone 项目到本地
+2. clone the project to local folder
   ```
   git clone https://github.com/dofy/learn-vim.git
   ```
